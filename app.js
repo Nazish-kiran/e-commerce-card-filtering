@@ -537,7 +537,7 @@ model.innerHTML += ` <option value="">select model</option>`;
 
 for (var key in carBrands) {
   brand.innerHTML += ` <option value="${key}">${key}</option>`;
-  for (var key1 in carBrands[key]) {
+  for (var key1 in carBrands[key]) {    
     var obj = carBrands[key][key1];
     main.innerHTML += `<div class="card m-4 mt-5 " style="width: 19rem">
         <img src="${obj.image}" class="card-img-top" alt="..." />
@@ -546,7 +546,7 @@ for (var key in carBrands) {
           <p class="card-text" style= "color:#f5b754">${obj.year}</p>
           <p class="card-text">${obj.type}</p>
           <a href="#" class="btn">Buy</a>
-        </div>
+        </div>f
       </div>`;
   }
 }
